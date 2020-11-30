@@ -19,6 +19,9 @@ bind generic M      ?git merge %(remote)/%(repo:head)
 # push
 bind generic P      ?git push -u %(remote) %(repo:head)
 
+# commit
+bind generic +      ?git commit --amend
+
 # rebase
 #bind main    R !git rebase -i %(commit)
 #bind diff    R !git rebase -i %(commit)
